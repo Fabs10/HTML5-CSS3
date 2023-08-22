@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias in HTML5</title>
+</head>
+<body>
+    <h1>Dynamic Images</h1>
+    <p>Try opening this website in different devices or just zoom in and out in your browser</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/small.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/medium.png" type="image/png">
+        <img src="images/big.png" alt="Flexible image">
+    </picture>
+    <h1>Playing Audio</h1>
+    <p>Check out my new song</p>
+    <!--<audio src="media/74.mp3" controls autoplay>Kasava</audio> -->
+    <audio preload="metadata" autoplay controls loop>
+    <source src="media/74.mp3" type="audio/mpeg">
+    <source src="media/74.ogg" type="audio/ogg">
+    <source src="media/74.wav" type="audio/wav">
+    <p>Sadly your browser cannot play this audio. <a href="media/74.mp3">Click the link to download</a></p>
+    </audio>
+    <h1>Check out my videos</h1>
+    <!--<video src="media/vid.mp4" width="500" controls></video> -->
+    <video width="500" poster="" controls loop>
+        <source src="media/vid.mp4" type="video/mp4">
+        <source src="media/vid.m4v" type="video/m4v">
+        <source src="media/vid.webm" type="video/webm">
+        <source src="media/vid.ogv" type="video/ogv">
+        <p>Sorry, your browser is not compatible with this video. <a href="media/vid.mp4">Click on this link to download the file</a></p>
+    </video>
+    <h1>Check out this cool video from youtube </h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

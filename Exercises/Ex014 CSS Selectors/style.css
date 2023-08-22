@@ -1,0 +1,32 @@
+/*
+in HTML id is # in CSS
+in HTML class is . in CSS*/
+
+body{
+    background-color: #d6fde9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #1e402f;
+}
+h1#main{
+    text-align: center;
+    background-color: #3c805e;
+    color: white;
+}
+h2{
+    color: #3c805e;
+}
+.basic{
+    color: #3c805e;
+    font-weight: bold;
+}
+.intermediate{
+    color: #80793c;
+}
+.advanced{
+    color: #803c3c;
+}
+.highlight{
+    background-color: #c5c56070;
+}
