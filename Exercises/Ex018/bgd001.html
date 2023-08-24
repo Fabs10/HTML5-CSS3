@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing background images</title>
+    <style>
+        body{
+            background-image: url(images/wallpaper003.jpg);
+        }
+        div.squared{
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+        }
+        
+        div#sq1{
+            background-color: skyblue;
+        }
+        div#sq2{
+            background-image: linear-gradient(to bottom, yellow, green);
+        }
+        
+        div#sq3{
+            background-image: url(images/pattern003.png);
+        }
+    </style>
+</head>
+<body>
+    <div class="squared" id="sq1"></div>
+    <div class="squared" id="sq2"></div>
+    <div class="squared" id="sq3"></div>
+</body>
+</html>
