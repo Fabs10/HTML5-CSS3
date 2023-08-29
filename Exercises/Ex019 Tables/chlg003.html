@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Challenging Table 3</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 300px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-weight: bolder;
+            font-size: large;
+        }
+
+        thead, tr.zebra{
+            background-color: lightslategrey;
+        }
+        
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+           
+        }
+
+        th.avrg{
+            text-align: left;
+        }
+
+        td.crs{
+            text-align: left;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Student's Grade</caption>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Domain</th>
+                <th scope="col" rowspan="2">Course</th>
+                <th scope="col" colspan="2">Grades</th>
+                <th scope="col" rowspan="2">Average</th>
+            </tr>
+            <tr>
+                <th>Grade 1</th>
+                <th>Grade 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <th scope="row" rowspan="4">Sciences</th>
+                <td class="crs">Math</td>
+                <td>8.5</td>
+                <td>8</td>
+                <td>8.25</td>
+            </tr>
+            <tr>
+                <td class="crs">Physics</td>
+                <td>7.8</td>
+                <td>8.2</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td class="crs">Chemistry</td>
+                <td>7.5</td>
+                <td>7.5</td>
+                <td>7.5</td>
+            </tr>
+            <tr>
+                <td class="crs">Biology</td>
+                <td>6</td>
+                <td>8</td>
+                <td>7</td>
+            </tr>
+            
+                <tr class="zebra">
+                    <th class="avrg" scope="row" colspan="4">Sciences Average</th>
+                    <td>7.5</td>
+                </tr>
+                <th scope="row" rowspan="2">Social</th>
+                <td class="crs">History</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+                
+                <tr>
+                    <td class="crs">Geography</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>9</td>
+                </tr>
+                <tr class="zebra">
+                    <th class="avrg" scope="row" colspan="4">Social Average</th>
+                    <td>9.5</td>
+                </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
