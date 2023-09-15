@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tables</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif
+        }
+        
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+
+        }
+        
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n){  /*can use nth-child(odd), (even), (3n)...*/
+            background-color: lightslategrey;
+
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        div#container{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive tables</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa libero, deserunt illo facere eius consectetur natus deleniti atque ullam laborum voluptatem tenetur. Eum et ullam est, voluptatibus quis esse velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dolore, dolores temporibus consequatur excepturi hic praesentium, esse velit fuga inventore nobis id? Delectus architecto perspiciatis eum debitis reiciendis illum ea.</p>
+    <!--
+        ANatomy
+        Table 
+            CAPTION
+            THEAD
+            TR, TD, TH
+            TBODY
+            TR, TD, TH
+            TFOOT
+            TR, TD, TH
+
+    -->
+    <div id="container">
+        <table>
+            <caption>Random cities Population</caption>
+            <thead>
+                <tr>
+                    <th scope="col">State</th>
+                    <th scope="col" style="width: 50px;">Population</th>
+                    <th scope="col">State</th>
+                    <th scope="col" style="width: 50px;">Population</th>
+                    <th scope="col">State</th>
+                    <th scope="col" style="width: 50px;">Population</th>
+                    <th scope="col">State</th>
+                    <th scope="col" style="width: 50px;">Population</th>
+                    <th scope="col">State</th>
+                    <th scope="col" style="width: 50px;">Population</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Haifa</td>
+                    <td class="num">1933000</td>
+                    <td>Haifa</td>
+                    <td class="num">1933000</td>
+                    <td>Haifa</td>
+                    <td class="num">1933000</td>
+                    <td>Haifa</td>
+                    <td class="num">1933000</td>
+                    <td>Haifa</td>
+                    <td class="num">1933000</td>
+                </tr>
+                <tr>
+                    <td>Tel Aviv</td>
+                    <td class="num">2340300</td>
+                    <td>Tel Aviv</td>
+                    <td class="num">2340300</td>
+                    <td>Tel Aviv</td>
+                    <td class="num">2340300</td>
+                    <td>Tel Aviv</td>
+                    <td class="num">2340300</td>
+                    <td>Tel Aviv</td>
+                    <td class="num">2340300</td>
+                </tr>
+                <tr>
+                    <td>Nazareth</td>
+                    <td class="num">34000</td>
+                    <td>Nazareth</td>
+                    <td class="num">34000</td>
+                    <td>Nazareth</td>
+                    <td class="num">34000</td>
+                    <td>Nazareth</td>
+                    <td class="num">34000</td>
+                    <td>Nazareth</td>
+                    <td class="num">34000</td>
+                </tr>
+                <tr>
+                    <td>Luanda</td>
+                    <td class="num">5003400</td>
+                    <td>Luanda</td>
+                    <td class="num">5003400</td>
+                    <td>Luanda</td>
+                    <td class="num">5003400</td>
+                    <td>Luanda</td>
+                    <td class="num">5003400</td>
+                    <td>Luanda</td>
+                    <td class="num">5003400</td>
+                </tr>
+                <tr>
+                    <td>Cabinda</td>
+                    <td class="num">1540439</td>
+                    <td>Cabinda</td>
+                    <td class="num">1540439</td>
+                    <td>Cabinda</td>
+                    <td class="num">1540439</td>
+                    <td>Cabinda</td>
+                    <td class="num">1540439</td>
+                    <td>Cabinda</td>
+                    <td class="num">1540439</td>
+                </tr>
+                <tr>
+                    <td>Bengo</td>
+                    <td class="num">2323434</td>
+                    <td>Bengo</td>
+                    <td class="num">2323434</td>
+                    <td>Bengo</td>
+                    <td class="num">2323434</td>
+                    <td>Bengo</td>
+                    <td class="num">2323434</td>
+                    <td>Bengo</td>
+                    <td class="num">2323434</td>
+                </tr>
+                <tr>
+                    <td>Luanda</td>
+                    <td class="num">5003400</td>
+                    <td>Luanda</td>
+                    <td class="num">5003400</td>
+                    <td>Luanda</td>
+                    <td class="num">5003400</td>
+                    <td>Luanda</td>
+                    <td class="num">5003400</td>
+                    <td>Luanda</td>
+                    <td class="num">5003400</td>
+                </tr>
+                <tr>
+                    <td>Cabinda</td>
+                    <td class="num">1540439</td>
+                    <td>Cabinda</td>
+                    <td class="num">1540439</td>
+                    <td>Cabinda</td>
+                    <td class="num">1540439</td>
+                    <td>Cabinda</td>
+                    <td class="num">1540439</td>
+                    <td>Cabinda</td>
+                    <td class="num">1540439</td>
+        
+                </tr>
+        
+        
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="9">Total Population</th>
+                    <td class="num"><strong>11208900</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

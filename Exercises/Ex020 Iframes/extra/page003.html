@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Table</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1{
+            padding-left: 225px;
+        }
+
+        table{
+            border-collapse: collapse ;  /* Collapse borders */
+            width: 600px;
+        
+        }
+
+        .headers{
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        td{
+            border: solid black 2px;
+            padding: 10px;
+            
+        }
+
+        td.grp{
+            text-align: center;
+            font-weight: bolder;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Real Table</h1>
+    <table>   <!--Can also be built using caption, thead, tbody, tfoot, and th with scope-->
+        <tr class="headers">
+            <td>Group</td>
+            <td>Names</td>
+            <td colspan="3">Movies</td>
+        </tr>
+        <tr>
+            <td class="grp" rowspan="3">Women</td>
+            <td>Jane Doe</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Avengers</td>
+            
+        </tr>
+        <tr>
+            <td>Anne Marie</td>
+            <td>Hulk</td>
+            <td>Inception</td>
+            <td>Batman</td>
+            
+        </tr>
+        <tr>
+            <td>Sarah Tilda</td>
+            <td>Oblivion</td>
+            <td>Matrix</td>
+            <td>Big Hero</td>
+            
+          
+        </tr>
+        <tr>
+            <td class="grp" rowspan="3">Men</td>
+            <td>Bruno Mars</td>
+            <td>Untouchable</td>
+            <td>Amnesia</td>
+            <td>Gladiator</td>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>Wall-E</td>
+            <td>Oldboy</td>
+            <td>Dangal</td>
+        </tr>
+        <tr>
+            <td>Fabs Babes</td>
+            <td>Boyka</td>
+            <td>John Wick</td>
+            <td>Ip Man</td>
+        </tr>
+       
+    </table>
+    
+</body>
+</html>
